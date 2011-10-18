@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+        <TabWidget android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@android:id/tabs"></TabWidget>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@android:id/tabcontent">
+            <LinearLayout 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:id="@+id/tabATmode" 
+            android:orientation="vertical"
+            android:layout_weight="1">
+                <TextView 
+                android:id="@+id/textView1" 
+                android:layout_width="fill_parent" 
+                android:text="@string/textLabelBuffer"
+                android:layout_weight="2" 
+                android:layout_height="wrap_content"/> 
+	            <EditText 
+	            android:layout_width="fill_parent" 
+	            android:id="@+id/editTextSerial" 
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" android:lines="10"/>
+	            <TextView 
+	            android:id="@+id/textView2" 
+	            android:layout_weight="2"
+	            android:text="@string/labelCommand" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+	            <EditText android:layout_width="fill_parent"
+	             android:inputType="textMultiLine" 
+	             android:layout_weight="1"
+	             android:id="@+id/editTextCommand" android:layout_height="wrap_content" android:lines="2"/>
+	            <LinearLayout
+			      android:orientation="horizontal"
+			      android:layout_width="fill_parent"
+			      android:layout_weight="1" android:layout_height="wrap_content">
+		            <Button android:id="@+id/buttonSend" 
+		            android:layout_width="wrap_content" 
+		            android:layout_height="wrap_content" 
+		            android:layout_weight="1"
+		            android:text="@string/buttonTx"/>
+		            <Button android:id="@+id/buttonClear" 
+		            android:layout_width="wrap_content" 
+		            android:layout_height="wrap_content" 
+		            android:layout_weight="1"
+		            android:text="@string/buttonClear"/>
+	            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:id="@+id/tabAPImode"
+            android:layout_weight="1">
+                <EditText android:layout_weight="1" 
+                android:layout_width="wrap_content" 
+                android:inputType="textMultiLine" 
+                android:layout_height="wrap_content" 
+                android:id="@+id/editTextATmode">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/tabSettings"></LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
+
+</LinearLayout>

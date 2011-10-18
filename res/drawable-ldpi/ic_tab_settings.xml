@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When selected, use grey -->
+    <item android:drawable="@drawable/mic_grey"
+          android:state_selected="true" />
+    <!-- When not selected, use white-->
+    <item android:drawable="@drawable/mic_white" />
+    
+        <!-- When selected, use grey -->
+    <item android:drawable="@drawable/ic_menu_equalizer"
+          android:state_selected="true" />
+    <!-- When not selected, use white-->
+    <item android:drawable="@drawable/ic_menu_equalizer" />
+    
+            <!-- When selected, use grey -->
+    <item android:drawable="@drawable/ic_menu_link"
+          android:state_selected="true" />
+    <!-- When not selected, use white-->
+    <item android:drawable="@drawable/ic_menu_link" />
+    
+    
+            <!-- When selected, use grey -->
+    <item android:drawable="@drawable/ic_menu_resize"
+          android:state_selected="true" />
+    <!-- When not selected, use white-->
+    <item android:drawable="@drawable/ic_menu_resize" />
+    
+</selector>

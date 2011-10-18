@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello, XBee!</string>
+    <string name="app_name">XBee IOIO adapter Robomotic 1.0</string>
+    <string name="textLabelBuffer">Debug buffer</string>
+    <string name="labelCommand">Command</string>
+    <string name="buttonTx">Send</string>
+    <string name="buttonClear">Clear</string>
+</resources>
